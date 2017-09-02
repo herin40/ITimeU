@@ -1,0 +1,14 @@
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/ic_list_selected" />
+
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/ic_list_unselected" />
+
+</selector>

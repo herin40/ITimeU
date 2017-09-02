@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_entry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:columnCount="6"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        android:useDefaultMargins="false">
+
+        <ImageView
+            android:layout_columnSpan="2"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:src="@drawable/ic_start_btn"/>
+
+        <TextView
+            android:id="@+id/name_txt_view"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center|bottom"
+            android:paddingTop="8dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D" />
+
+        <GridLayout
+            android:layout_columnSpan="2"
+            android:layout_gravity="center_vertical"
+            android:layout_rowSpan="2">
+
+            <TextView
+                android:id="@+id/unit_txt_view"
+                android:gravity="fill"
+                android:padding="8dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/unit_divider"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/total_unit_txt_view"
+                android:layout_gravity="fill"
+                android:padding="8dp"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/detail_txt_view"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center"
+            android:paddingBottom="8dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </GridLayout>
+</android.support.v7.widget.CardView>

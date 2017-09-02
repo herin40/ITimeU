@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itti7.itimeu.ListItemFragment">
+
+    <GridLayout
+        android:id="@+id/title_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/achievement_rate_txt_view"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/rate_detail_txt_view"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/date_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                android:drawablePadding="10dp"
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/listitem_previous_date_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/listitem_previous_date_description"
+                android:paddingRight="12dp"
+                android:src="@drawable/ic_date_left" />
+
+            <ImageButton
+                android:id="@+id/listitem_next_date_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/listitem_next_date_description"
+                android:paddingLeft="12dp"
+                android:src="@drawable/ic_date_right" />
+        </FrameLayout>
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/item_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_grid_layout"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="4dp"
+        android:padding="12dp">
+
+    </ListView>
+
+    <!-- Empty view for the list -->
+    <RelativeLayout
+        android:id="@+id/empty_relative_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="140dp">
+
+        <ImageView
+            android:id="@+id/empty_shelter_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/empty_background" />
+
+        <TextView
+            android:id="@+id/empty_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_shelter_image"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="16dp"
+            android:text="@string/empty_title_str"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/empty_subtitle_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_title_txt"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="8dp"
+            android:text="@string/empty_subtitle_str"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#A2AAB0" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_add_white"
+        app:fabSize="normal" />
+
+</RelativeLayout>

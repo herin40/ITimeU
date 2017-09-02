@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">I Time U</string>
+    <string name="setting">설정</string>
+    <string name="statistics">통계</string>
+</resources>

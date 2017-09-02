@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    tools:context="com.itti7.itimeu.AboutFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/about_title"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/about_version"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/version_txt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_gravity="right"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp" />
+    </GridLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#C1C1C1" />
+
+    <TextView
+        android:id="@+id/licenses_txt_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="30dp"
+        android:text="@string/about_licenses"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#C1C1C1" />
+
+    <TextView
+        android:id="@+id/feedback_txt_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="30dp"
+        android:text="@string/about_feedback"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#C1C1C1" />
+
+</LinearLayout>
